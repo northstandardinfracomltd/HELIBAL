@@ -59,7 +59,7 @@ export default function About({ t }: AboutProps) {
               <p>{t.aboutP2}</p>
 
               {/* Balearic Flag & Operating Region */}
-              <div className="pt-2 flex items-start sm:items-center gap-3 bg-stone-50 border border-stone-200/80 p-3.5 rounded-xl">
+              <div className="pt-2 flex items-start sm:items-center gap-3 border border-stone-200/80 p-3.5 rounded-xl">
                 <img 
                   src="https://civilprom.s3.eu-north-1.amazonaws.com/Flag+Baleares.svg" 
                   alt="Drapeau Baléares" 
