@@ -147,6 +147,23 @@ export default function App() {
 
       const ogDesc = document.querySelector('meta[property="og:description"]');
       if (ogDesc) ogDesc.setAttribute('content', finalDescription);
+
+      // 5. Update Canonical link for Google Search Console
+      let canonicalLink = document.querySelector('link[rel="canonical"]');
+      if (!canonicalLink) {
+        canonicalLink = document.createElement('link');
+        canonicalLink.setAttribute('rel', 'canonical');
+        document.head.appendChild(canonicalLink);
+      }
+      canonicalLink.setAttribute('href', 'https://helibaleares.com/');
+
+      let ogUrlMeta = document.querySelector('meta[property="og:url"]');
+      if (!ogUrlMeta) {
+        ogUrlMeta = document.createElement('meta');
+        ogUrlMeta.setAttribute('property', 'og:url');
+        document.head.appendChild(ogUrlMeta);
+      }
+      ogUrlMeta.setAttribute('content', 'https://helibaleares.com/');
     } catch (error) {
       console.warn("SEO head updates deferred:", error);
     }

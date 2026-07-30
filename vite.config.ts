@@ -16,13 +16,6 @@ export default defineConfig(() => {
       rollupOptions: {
         input: {
           main: path.resolve(__dirname, 'index.html'),
-          ibiza: path.resolve(__dirname, 'ibiza/index.html'),
-          mallorca: path.resolve(__dirname, 'mallorca/index.html'),
-          monaco: path.resolve(__dirname, 'monaco/index.html'),
-          malta: path.resolve(__dirname, 'malta/index.html'),
-          zurich: path.resolve(__dirname, 'zurich/index.html'),
-          london: path.resolve(__dirname, 'london/index.html'),
-          megeve: path.resolve(__dirname, 'megeve/index.html'),
         }
       }
     },
